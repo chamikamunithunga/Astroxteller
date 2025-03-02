@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroXtellar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Space Background with Stars */
+        body {
+            background-image: url("imgs/game1bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            
+        }
+        .glassy-box {
+    width: 90%;
+    max-width: 1400px;
+    height: 650px;
+    padding: 10px;
+    background: #ffffff1a;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #ffffff33;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid #ffffff4d;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+.glassy-box1 {
+    width: 85%;
+    max-width: 1400px;
+    height: 150px;
+    padding: 10px;
+    background: #ffffff1a;
+    box-shadow: 0 4px 10px #ffffff33;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid #ffffff4d;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+        .glassy-box h2 {
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-family: 'Irish Grover', cursive;
+            background: linear-gradient(35deg, #ff0000, #6400e6);
+            border-radius: 80%;
+        }
+
+        .glassy-box h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            font-family: 'Irish Grover', cursive;
+            margin-right: 1000px;
+            
+            
+        }
+        .glassy-box h4 {
+            font-size: 24px;
+            margin-top: 200px;
+            font-family: 'Irish Grover', cursive;
+            margin-right: 780px;
+            
+            
+            
+        }
+
+        .glassy-box2 {
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15); /* Light transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Blurry effect */
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    color: white;
+    margin: 20px auto;
+}
+
+.glassy-box2 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Two columns for two rows */
+    gap: 15px; /* Space between buttons */
+    list-style: none;
+    padding: 0;
+}
+
+.glassy-box2 li {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.glassy-box2 button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+/* Button Hover Effect */
+.glassy-box2 button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    transform: scale(1.1);
+    border-color: white;
+}
+
+
+
+        
+
+        
+
+       
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(-20deg, #ff0000, #948000, #6400e6, #006de1);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            border-bottom: 3px solid rgba(0, 0, 0, 0); 
+            
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 20% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar h1 {
+            color: #ffffff;
+            font-size: 40px;
+            font-family: 'Irish Grover', cursive;
+        }
+
+        .nav-links {
+           display: flex;
+           list-style: none;
+           gap: 20px;
+        }
+
+        .nav-links li {
+            padding: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #00ccff;
+        }
+
+        
+
+
+
+        
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    
+
+    <div class="stars"></div>
+
+    <div class="navbar">
+        <div class="logo">
+            <h1>AstroXtellar</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Signup</a></li>
+        </ul>
+    </div>
+
+    <div class="glassy-box">
+        <h2>Welcome to AstroXtellar</h2>
+        <h3>Question :</h3>
+        <div class="glassy-box1"></div>
+        <h4>Answers :</h4>
+        <div class="glassy-box2">
+            <ul>
+                <li><button>A :</button></li>
+                <li><button>B :</button></li>
+                <li><button>C :</button></li>
+                <li><button>D :</button></li>
+            </ul>
+        </div>
+        
+        
+            
+            
+    
+        
+
+    </div>
+
+   
+     
+    
+
+    
+
+ 
+    
+
+    
+       
+        
+        
+        
+    
